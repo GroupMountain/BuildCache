@@ -1,0 +1,30 @@
+{
+  "name": "buildcache",
+  "version": "1.0.0",
+  "description": "Template for mods using GMLIB",
+  "main": "dist/bundle.js",
+  "type": "module",
+  "scripts": {
+    "bundle": "npm run format:write && npm run package",
+    "format:write": "npx prettier --write ./src",
+    "format:check": "npx prettier --check ./src",
+    "package": "npx rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GroupMountain/BuildCache.git"
+  },
+  "author": "n15421",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GroupMountain/BuildCache/issues"
+  },
+  "homepage": "https://github.com/GroupMountain/BuildCache#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/tool-cache": "^2.0.2",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0"
+  }
+}

@@ -1,2 +1,4 @@
-# GMLIB-Mod-Template
-Template for mods using GMLIB
+# Build Cache
+##### useage:
+action:
+`- uses: GroupMountain/BuildCache@main`

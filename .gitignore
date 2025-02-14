@@ -16,3 +16,5 @@ build/
 /CMakeLists.txt
 /bin
 /.cache
+node_modules/
+package-lock.json

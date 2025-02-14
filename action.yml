@@ -1,0 +1,13 @@
+name: Fetch Cache
+description: Download the prebuilt cache.
+author: n15421
+
+inputs:
+  version:
+    required: true
+    default: latest
+    description: The version to use.    e.g. 'latest', '1.0.1'
+
+runs:
+  using: 'node20'
+  main: 'dist/bundle.js'

@@ -9,8 +9,9 @@ end
 
 add_requires("levilamina", "gmlib")
 add_requires("levibuildscript 0.3.0")
+add_requires("legacyremotecall")
 
-target("GMLIB-Mod-Template") -- Change this to your mod name.
+target("BuildCache") -- Change this to your mod name.
     add_cxflags(
         "/EHa",
         "/utf-8"
@@ -23,14 +24,15 @@ target("GMLIB-Mod-Template") -- Change this to your mod name.
         "_HAS_CXX23"
     )
     add_files(
-        "src/**.cpp"
+        "src-plugin/**.cpp"
     )
     add_includedirs(
-        "src"
+        "src-plugin"
     )
     add_packages(
         "levilamina",
-        "gmlib"
+        "gmlib",
+        "legacyremotecall"
     )
     add_rules("@levibuildscript/linkrule")
     add_rules("@levibuildscript/modpacker")
