@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Entry.h"
-#include "gmlib/include_all.h"
+#include "gmlib/inclde_all.h"
 
 #define MOD_NAME "GMLIB-Mod-Template"
 #define selfMod  my_mod::Entry::getInstance()
