@@ -38,5 +38,5 @@ target("BuildCache") -- Change this to your mod name.
     add_rules("@levibuildscript/modpacker")
     set_exceptions("none")
     set_kind("shared")
-    set_languages("c++23")
+    set_languages("c++20")
     set_symbols("debug")
