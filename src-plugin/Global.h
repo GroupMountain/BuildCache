@@ -1,9 +1,6 @@
 #pragma once
 
-#include <span> // temporarily fix the workflows build
-
 #include "Entry.h"
-#include "gmlib/inclde_all.h"
 
 #define MOD_NAME "GMLIB-Mod-Template"
 #define selfMod  my_mod::Entry::getInstance()
